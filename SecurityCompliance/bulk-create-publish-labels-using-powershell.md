@@ -1,5 +1,5 @@
 ---
-title: "Bulk create and publish retention labels by using PowerShell"
+title: "Bulk create and publish retention labels using PowerShell"
 ms.author: stephow
 author: stephow-msft
 ms.date: 
@@ -12,32 +12,32 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "In Office 365, you can use labels to implement a retention schedule for your organization. As a record manager or compliance officer, you might have hundreds of labels to create and publish. You can do this through the UI in the Security and Compliance Center, but creating labels one at a time is time-consuming and inefficient. By using the script and .csv files provided below, you can bulk create and publish labels and label policies. First you create a list of the labels and a list of the label policies in Excel, and then you bulk create the labels and label policies in those lists by using PowerShell. This makes it easier to create and publish at one time all of the labels that your retention schedule requires."
+description: "In Office 365, you can use retention labels to implement a retention schedule for your organization. As a records manager or compliance officer, you might have hundreds of retention labels to create and publish. You can do this through the UI in the Security and Compliance Center, but creating that many retention labels one at a time is time-consuming and inefficient. By using the script and .csv files provided below, you can create and publish labels and label policies in bulk. First you create a list of the labels and a list of the label policies in Excel, and then you bulk create the labels and label policies in those lists by using PowerShell. This makes it easier to create and publish at one time, all of the labels that your retention schedule requires."
 ---
 
-# Bulk create and publish retention labels by using PowerShell
+# Bulk create and publish retention labels using PowerShell
 
-In Office 365, you can use labels to implement a retention schedule for your organization. As a record manager or compliance officer, you might have hundreds of labels to create and publish. You can do this through the UI in the Security &amp; Compliance Center, but creating labels one at a time is time-consuming and inefficient.
+In Office 365, you can use retention labels to implement a retention schedule for your organization. As a records manager or compliance officer, you might have hundreds of labels to create and publish. You can do this in the Security &amp; Compliance Center UI, but creating that many retention labels, one at a time, is time-consuming and inefficient.
   
-By using the script and .csv files provided below, you can bulk create and publish labels and label policies. First you create a list of the labels and a list of the label policies in Excel, and then you bulk create the labels and label policies in those lists by using PowerShell. This makes it easier to create and publish at one time all of the labels that your retention schedule requires.
+By using the script and .csv files provided below, you can bulk create and publish retention labels and retention label policies. First you create a list of the retention labels and a list of the retention label policies in Excel, and then you bulk create the labels and label policies in those lists by using PowerShell. This makes it easier to create and publish at one time all of the labels that your retention schedule requires.
   
-For more information about labels, see [Overview of labels](labels.md).
+For more information about labels, see [Overview of retention labels](labels.md).
   
 ## Disclaimer
 
 The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
   
-## Step 1: Create a .csv file for creating the labels
+## Step 1: Create a .csv file for creating retentiom labels
 
-First you create a .csv file that contains a list of your labels with their retention settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.
+First you create a .csv file that contains a list of your retention labels with their settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.
   
 For more information about the parameter values for this cmdlet, see [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
   
 Notes:
   
-- If you don't provide a source file for creating labels, the script moves on and prompts you for the source file for publishing labels (see the next section), and the script will publish only existing labels.
+- If you don't provide a source file for creating labels, the script moves on and prompts you for the source file for publishing retention labels (see the next section), and the script will publish only existing retention labels.
     
-- If the .csv file contains a label with the same name as one that already exists, the script skips creating that label. No duplicate labels are created.
+- If the .csv file contains a retention label with the same name as one that already exists, the script skips creating that retention label. No duplicate labels are created.
     
 - If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.
     
@@ -51,19 +51,19 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## Step 2: Create a .csv file for publishing the labels
+## Step 2: Create a .csv file for publishing retention labels
 
-Next you create a .csv file that contains a list of label policies with their locations and other settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.
+Next you create a .csv file that contains a list of retention label policies with their locations and other settings. You can use the sample below as a template by copying it into Excel, converting the text to columns (in Excel \> **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**), and then saving the worksheet as a .csv file in a location that's easy to find.
   
 For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512).
   
 Notes:
   
-- If you don't provide a source file for publishing labels, the script creates labels (see the previous section) but does not publish them.
+- If you don't provide a source file for publishing retention labels, the script creates retention labels (see the previous section) but does not publish them.
     
-- If the .csv file contains a label policy with the same name as one that already exists, the script skips creating that label policy. No duplicate label policies are created.
+- If the .csv file contains a retention label policy with the same name as one that already exists, the script skips creating that retention label policy. No duplicate label policies are created.
     
-- The script publishes only labels that are applied manually to content. This script does not support labels that are auto-applied to content.
+- The script publishes only retention labels that are applied manually to content. This script does not support retention labels that are auto-applied to content.
     
 - If you change or rename the column headers, the script will fail. The script requires a .csv file in the format provided here.
     
@@ -708,9 +708,9 @@ Follow the steps here:
   
 - [Connect to Office 365 Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
-## Step 5: Run the PowerShell script to create and publish the labels
+## Step 5: Run the PowerShell script to create and publish the retention labels
 
-After you've connected to Security &amp; Compliance Center PowerShell, next you run the script that creates and publishes the labels.
+After you've connected to Security &amp; Compliance Center PowerShell, next you run the script that creates and publishes the retention labels.
   
 1. In the Security &amp; Compliance PowerShell session, enter the path, followed by the characters .\ and file name of the script, and then press ENTER to run the script - for example:
     
@@ -728,7 +728,7 @@ After you've connected to Security &amp; Compliance Center PowerShell, next you 
 
 ## Step 6: View the log file with the results
 
-When you run the script, it generates a log file that records each action it took and whether the action succeeded or failed. The log file includes all metadata about what labels were created and what labels were published. You can find the log file at this location -- note that the digits in the file name vary.
+When you run the script, it generates a log file that records each action it took and whether the action succeeded or failed. The log file includes all metadata about the retention labels that were created and which retention labels were published. You can find the log file at this location -- note that the digits in the file name vary.
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt

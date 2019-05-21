@@ -5,108 +5,89 @@ description: "With records management in Office 365, you can apply your organiza
 ---
 # Records management in Office 365
 
-Records management is all about keeping data around when you need it and getting rid of it when you don't. A well-designed records management program helps protect an organization legally, provides the ability to demonstrate compliance with regulatory obligations, and increases efficiency by promoting the disposition items that are no longer of value or no longer required to be retained by the organization. 
-
-With records management in Office 365, you can apply your organization retention schedules into the file plan to manage retention, records declaration and disposition in support of the full content lifecycle and accross Office 365.
-
-## Overview
+Records management is all about keeping data around when you need it and getting rid of it when you don't. A well-designed records management program helps protect an organization legally, provides the ability to demonstrate compliance with regulatory obligations, and increases efficiency by promoting the disposition of  items that are no longer of value or no longer required to be retained by the organization. 
 
 A records management program typically includes the following elements:
 
-  - Content analysis that identifies and categorizes content in the enterprise that can become records, that provides source locations, and that describes how the content will move to the records management application.
+  - **Content analysis** that identifies and categorizes content in the enterprise that: are records, work in progress, or have business general use value. The analysis will also provide information about where the content resides, which business functions are custodians of the content, and how the content needs to be handled throughout its lifecycle.
+  - **Compliance requirements** that identify which regulations and/or laws are applicable, articulate the rules that the organization must follow to ensure compliance, and the methods that need to be used to ensure the participation of enterprise team members.  
+  - **Operational and human resources requirements** that identify the authorities, stakeholders and accountable parties within the organization that are required to act for the organization to be successful in complying with applicable laws/regulations and to meet the business continuity goals of the records management program.
+  - A **file plan** to memorialize and systematize the final output and decisions made from the content analysis and compiled compliance requirements for each kind of record in the enterprise, equating to how they will be classified, where they will be retained, which policies apply, what events cause retention/deletion to begin or finish, how long they must be retained, how they will be disposed of, and who is responsible for managing them along the way.
+  - A **method for capturing content metadata and audit histories** and for maintaining them.
+  - A **process for holding records (suspending their disposition)** when events such as litigations occur.
+  - A **system for monitoring and reporting on compliance to the file plan** to ensure that employees are filing, accessing, and managing them according to defined policies and processes.
+  - A **process and the data to support an auditable and defensible content and records lifecycle** to provide to internal or external audit, legal and/or regulatory authorities for review. 
 
-  - A file plan that indicates, for each kind of record in the enterprise, where they should be retained as records, the policies that apply to them, how long they must be retained, how they should be disposed of, and who is responsible for managing them.
-  
-  - A compliance requirements document that defines the rules that the organization tems must follow to ensure compliance and the methods that are used to ensure the participation of enterprise team members.
-  
-  - A method for collecting records that are no longer active from all record sources, such as collaboration servers, file servers, and email systems.
+With records management in Office 365, you can incorporate your organization’s retention schedules into the file plan to manage retention, records declaration and disposition in support of the full content lifecycle across Office 365.
 
-  - A method for auditing records while they are active.
-  
-  - A method for capturing records' metadata and audit histories and for maintaining them.
-  
-  - A process for holding records (suspending their disposition) when events such as litigations occur.
-  
-  - A system for monitoring and reporting on the handling of records to ensure that employees are filing, accessing, and managing them according to defined policies and processes.
-  
-  - A process and the data to support an auditable and defensible content and records lifecycle to provide to internal or external audit, legal and/or regulatory authorities for review. 
+## Components
 
+The key components of records management in Office 365 are provided by the Security and Compliance Center are: 
+
+   - File plan 
+   - Events
+   - Dispositions
 
 ## Benefits
 
-Lorem ....
+Through the use of these components, your organization will minimally realize the following benefits: 
 
-•	Centralized admin portal, specific for Records and Compliance Managers 
-•	Supports various combinations of retention and disposition rules
-•	In-place Records Management
-•	Cross-O365 coverage (locations)
+- A centralized administrative portal, specific for Records and Compliance Managers 
+- Supports various combinations of retention, record declaration snd disposition rules
+- In-place Records Management: no need to move contnet
+- Cross-O365 coverage: Exchange, SharePoint, OneDrive, Groups, Teams
+- The ability to present the most relevant, in context retention labels to users
+- Automatically apply retention label, based on: sensitive information, content query, default retention label
+- Declare records within business process workflpply a retention label when an event occurs – project closure, employee leaves
+- Compliant and defensible disposition
+   - Manually review content for disposal 
+   - Automate disposal for non-value content
+- Visually monitor retention, records and disposition activity
+- Quick access to activity reports
 
-<include a graphic – something like this… >
+## Business scenarios
 
-•	Present the most relevant labels to users
-•	Declare records within business process workflow
-    o Standard records and compliance for Regulatory records
-•	Automatically apply retention labels 
-    o	Via Sensitive information
-    o	Via content query
-    o	Via default label at library, folder and docset levels
-    o	When an event occurs – project closure, employee leaves
-•	Compliant and defensible disposition
-    o	Manual Review content for disposal 
-    o	Automate disposal for non-value content
-•	Visually monitor retention, records and disposition activity
-•	Quick access to audit and activity reports
+Here are a few hightlights of the many business scenarios supported: 
 
-## Use cases
+  - Import your existing file plan
+  - Ensure regulatory compliance for records
+  - Apply labels by default to a library, folder or docset
+  - Auto-apply labels based on your existing SharePoint metadata
+  - Auto-apply labels based on sensitive content, like social security numbers 
+  - Add a site collection to an existing retention label policy
+  - How to handle content left behind by an employee no longer with the organization
+  
+## File plan
 
-Lorem ...
+**File plan management**
+Centralized and advanced management of the entire content lifecycle - spanning retention labels, retention label policies, events, record declaration, disposition review, analytics and reporting. 
 
-•	Import existing file plan
-•	Ensure compliance for regulatory records
-•	Apply labels by default to a library, folder or docset
-•	Auto-apply labels based on your existing SharePoint metadata
-•	Auto-apply labels based on sensitive content 
-•	Add a site collection to an existing retention label policy
-•	How to handle content left behind by an employee no longer with the organization
+**File plan descriptors**
+Use descriptors to organize and differentiate labels from each other – Reference ID, Function/department, Category, Subcategory, Authority type and Provision/citation.
 
+**Import/export retention labels in bulk**
+Use file plan manager to manage periodic reviews and updates of your file plan with stakeholders.
 
-## Step-by-step
+**Advanced view of retention label settings** 
+View and sort by additional retention label settings: Based On (trigger), Record (declaration), Retention (duration), and Disposition (action).
 
-### Step 1 — Review current state
+**Active/Inactive Status**
+Know which retention labels and retention label policies are actively in use and which aren’t by referencing the status of each.
 
-Lorehm..
-  •	Are there existing records management professionals, resources and local business professionals serving as an extension of the RM program in your organization, how structured, and prevalent across your organization? What is the program’s rhythm of business, how often are policies and procedures reviewed and ratified?  
-  •	Is there an existing file plan in place? How it is implemented?
-  •	Which governing and regulatory bodies have jurisdiction over your business?  
-  • How structured is your SharePoint implementation?
-  • Does your organization distinguish and have different RM policies for custodial vs. non-custodial content?
+[Learn more about the capabilities, and benefits of file plan.](file-plan-manager.md) 
 
-### Step 2 - Record management roles
-  •	Records managers and compliance officers to categorize the records in the organization and to run the records management process.
-  •	Personnel to implement the systems that efficiently support records management.
-  •	Content managers to find where organizational information is kept and to make sure that that their teams follow records management practices.
+## Events
 
-### Step 3: Create your organization’s file plan
-•	Records retention schedule 
-•	Maybe there are retention labels and policies already in O365
-•	Manually create/update or import
-•	…
+[Learn more about the capabilities, and benefits of Events.](event-driven-retention.md)
 
-### Step 4: Apply retention labels to content
- •	Automate and/or manually apply
- •	Management of obsolete records
+## Dispositions
 
-### Step 5: Monitor & fine tune your organization’s file plan
- •	Man
+[Learn more about the capabilities, and benefits of disposition reviews.](disposition-reviews.md)
 
-### Step 6: Review content for disposition
+## Summary
+ 
+ 
 
-### Step 7: Provide data as required/requested by governing bodies
-•	Defensible deletion
-•	…
-
-
-Summary
 
 
 

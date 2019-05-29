@@ -34,7 +34,7 @@ Through the use of these components, your organization will minimally realize th
 
 - A centralized administrative portal, specific for records and compliance managers 
 - Support for various combinations of retention, record declaration, and disposition rules
-- In-place Records Management: no need to move contnet
+- In-place records management; no need to move content
 - Cross-O365 coverage; Exchange, SharePoint, OneDrive, Groups, Teams
 - The ability to present the most relevant, in context retention labels to users
 - Automatically apply retention label, based on: sensitive information, content query, default retention label

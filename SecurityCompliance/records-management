@@ -33,7 +33,7 @@ The key components of records management in Office 365 provided by the Security 
 Through the use of these components, your organization will minimally realize the following benefits: 
 
 - A centralized administrative portal, specific for records and compliance managers 
-- Supports various combinations of retention, record declaration snd disposition rules
+- Support for various combinations of retention, record declaration, and disposition rules
 - In-place Records Management: no need to move contnet
 - Cross-O365 coverage; Exchange, SharePoint, OneDrive, Groups, Teams
 - The ability to present the most relevant, in context retention labels to users

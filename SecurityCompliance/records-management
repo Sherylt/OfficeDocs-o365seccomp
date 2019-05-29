@@ -51,7 +51,7 @@ Here are a few hightlights of the many business scenarios supported:
 
   - Import your existing file plan
   - Ensure regulatory compliance for records
-  - Apply labels by default to a library, folder or docset
+  - Apply labels by default to a library, folder, or docset
   - Auto-apply labels based on your existing SharePoint metadata
   - Auto-apply labels based on sensitive content, like social security numbers 
   - Add a site collection to an existing retention label policy
